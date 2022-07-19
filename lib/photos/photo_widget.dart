@@ -1,23 +1,23 @@
 import 'package:flutter/material.dart';
 import 'package:sample/photos/photo_future_builder.dart';
-import 'package:sample/login/model/UserInfo.dart';
+
 
 class PhotoWidget extends StatefulWidget {
-  final UserInfo userInfo;
-  const PhotoWidget({Key? key,required this.userInfo}) : super(key: key);
+  final String title;
+  const PhotoWidget({Key? key,required this.title}) : super(key: key);
 
   @override
-  State<PhotoWidget> createState() => _PhotoWidget(this.userInfo);
+  State<PhotoWidget> createState() => _PhotoWidget(this.title);
 }
 
 class _PhotoWidget extends State<PhotoWidget> {
-  UserInfo userInfo;
-  _PhotoWidget(this.userInfo);
+  String title;
+  _PhotoWidget(this.title);
 
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(title: Text(userInfo.username)
+      appBar: AppBar(title: Text(title)
       ),
       body: PhotoFutureBuilder().getPhotoBuilder(),);
   }

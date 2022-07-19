@@ -44,6 +44,60 @@
       "languageVersion": "2.12"
     },
     {
+      "name": "firebase_auth",
+      "rootUri": "file:///Users/gv/.pub-cache/hosted/pub.dartlang.org/firebase_auth-3.4.2",
+      "packageUri": "lib/",
+      "languageVersion": "2.16"
+    },
+    {
+      "name": "firebase_auth_platform_interface",
+      "rootUri": "file:///Users/gv/.pub-cache/hosted/pub.dartlang.org/firebase_auth_platform_interface-6.3.2",
+      "packageUri": "lib/",
+      "languageVersion": "2.16"
+    },
+    {
+      "name": "firebase_auth_web",
+      "rootUri": "file:///Users/gv/.pub-cache/hosted/pub.dartlang.org/firebase_auth_web-4.0.0",
+      "packageUri": "lib/",
+      "languageVersion": "2.16"
+    },
+    {
+      "name": "firebase_core",
+      "rootUri": "file:///Users/gv/.pub-cache/hosted/pub.dartlang.org/firebase_core-1.19.2",
+      "packageUri": "lib/",
+      "languageVersion": "2.16"
+    },
+    {
+      "name": "firebase_core_platform_interface",
+      "rootUri": "file:///Users/gv/.pub-cache/hosted/pub.dartlang.org/firebase_core_platform_interface-4.4.3",
+      "packageUri": "lib/",
+      "languageVersion": "2.16"
+    },
+    {
+      "name": "firebase_core_web",
+      "rootUri": "file:///Users/gv/.pub-cache/hosted/pub.dartlang.org/firebase_core_web-1.7.0",
+      "packageUri": "lib/",
+      "languageVersion": "2.16"
+    },
+    {
+      "name": "firebase_messaging",
+      "rootUri": "file:///Users/gv/.pub-cache/hosted/pub.dartlang.org/firebase_messaging-10.0.9",
+      "packageUri": "lib/",
+      "languageVersion": "2.12"
+    },
+    {
+      "name": "firebase_messaging_platform_interface",
+      "rootUri": "file:///Users/gv/.pub-cache/hosted/pub.dartlang.org/firebase_messaging_platform_interface-3.5.4",
+      "packageUri": "lib/",
+      "languageVersion": "2.16"
+    },
+    {
+      "name": "firebase_messaging_web",
+      "rootUri": "file:///Users/gv/.pub-cache/hosted/pub.dartlang.org/firebase_messaging_web-2.4.4",
+      "packageUri": "lib/",
+      "languageVersion": "2.16"
+    },
+    {
       "name": "flutter",
       "rootUri": "file:///Users/gv/flutter/packages/flutter",
       "packageUri": "lib/",
@@ -86,6 +140,12 @@
       "languageVersion": "2.12"
     },
     {
+      "name": "intl",
+      "rootUri": "file:///Users/gv/.pub-cache/hosted/pub.dartlang.org/intl-0.17.0",
+      "packageUri": "lib/",
+      "languageVersion": "2.12"
+    },
+    {
       "name": "js",
       "rootUri": "file:///Users/gv/.pub-cache/hosted/pub.dartlang.org/js-0.6.4",
       "packageUri": "lib/",
@@ -118,6 +178,12 @@
     {
       "name": "path",
       "rootUri": "file:///Users/gv/.pub-cache/hosted/pub.dartlang.org/path-1.8.2",
+      "packageUri": "lib/",
+      "languageVersion": "2.12"
+    },
+    {
+      "name": "plugin_platform_interface",
+      "rootUri": "file:///Users/gv/.pub-cache/hosted/pub.dartlang.org/plugin_platform_interface-2.1.2",
       "packageUri": "lib/",
       "languageVersion": "2.12"
     },
@@ -188,7 +254,7 @@
       "languageVersion": "2.18"
     }
   ],
-  "generated": "2022-07-13T08:45:48.772840Z",
+  "generated": "2022-07-18T07:12:43.360676Z",
   "generator": "pub",
   "generatorVersion": "2.18.0-254.0.dev"
 }

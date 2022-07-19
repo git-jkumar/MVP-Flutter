@@ -1,6 +1,6 @@
 import 'dart:convert';
 import 'package:http/http.dart' as http;
-import 'package:sample/base/env_config/env.dart';
+import 'env_config/env.dart';
 
 class BasePresenter {
   String apiHost = Environment().config.apiHost;
@@ -19,12 +19,7 @@ class BasePresenter {
 
   dynamic initGetRequest(String endPoint) async {
     final response = await client.get(Uri.parse(apiHost + endPoint),headers: requestHeaders);
-    // if(response.statusCode == HttpStatus.ok){
-    //   onSuccess(response.body);
-    // }else{
-    //   onError(response.body);
-    // }
-    return jsonDecode(response.body).cast<Map<String, dynamic>>();
+    return jsonDecode(response.body);
   }
 
   // dynamic onSuccess(dynamic result);

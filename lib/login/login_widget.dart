@@ -76,7 +76,7 @@ class _LoginWidget extends State<LoginWidget>{
           TextButton(
             child: const Text(
               'Sign up',
-              style: TextStyle(fontSize: 10),
+              style: TextStyle(fontSize: 20),
             ),
             onPressed: () {
               //signup screen
