@@ -1,3 +1,5 @@
+
+
 class BaseResponse {
   String message ="";
   bool status = false;
@@ -9,3 +11,4 @@ class BaseResponse {
     status = json['status'];
   }
 }
+

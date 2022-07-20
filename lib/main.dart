@@ -2,6 +2,7 @@ import 'dart:io';
 
 import 'package:firebase_core/firebase_core.dart';
 import 'package:flutter/material.dart';
+import 'package:sample/activity/activity_widget.dart';
 import 'package:sample/base/env_config/env.dart';
 import 'package:sample/splash/splash.dart';
 

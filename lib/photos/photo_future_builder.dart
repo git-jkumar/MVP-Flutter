@@ -1,24 +1,20 @@
 import 'package:flutter/material.dart';
 import "package:sample/photos/model/photo.dart";
 import 'package:sample/photos/widget/photo_list.dart';
-import 'package:sample/photos/photo_presenter.dart';
 
 class PhotoFutureBuilder{
-
-  var presenter ;
   var photoBuilder;
 
-  PhotoFutureBuilder(){
-    presenter = PhotoPresenter();
+  PhotoFutureBuilder(bool isError, List<Photo>? photos){
     photoBuilder = FutureBuilder<List<Photo>>(
-      future: presenter.getPhotos(),
+      initialData: photos,
       builder: (context, snapshot) {
-        if (snapshot.hasError) {
+        if (isError) {
           return const Center(
             child: Text('An error has occurred!'),
           );
-        } else if (snapshot.hasData) {
-          return PhotosList(photos: snapshot.data!);
+        } else if (photos !=null) {
+          return PhotosList(photos: photos);
         } else {
           return const Center(
             child: CircularProgressIndicator(),
@@ -29,7 +25,7 @@ class PhotoFutureBuilder{
   }
 
   FutureBuilder<List<Photo>> getPhotoBuilder(){
-   return photoBuilder;
+    return photoBuilder;
   }
 
 }

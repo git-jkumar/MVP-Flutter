@@ -1,14 +1,26 @@
-import 'dart:async';
 import 'package:sample/activity/model/activity.dart';
+import 'package:sample/base/ICallback.dart';
 import 'package:sample/base/base_presenter.dart';
 import 'model/activity_apis.dart';
 
-class ActivityPresenter extends BasePresenter{
+class ActivityPresenter extends BasePresenter<ICallback>{
 
-  Future<Activity> getActivity() async {
+  ActivityPresenter(super.callback);
+
+  void getActivity() {
     apiHost = "https://dog.ceo/api/breeds/image" ;
-    final parsed = await initGetRequest(ActivityAPIs.GET_ACTIVITY);
-    return Activity.fromJson(parsed);
+    initGetRequest(ActivityAPIs.GET_ACTIVITY);
   }
+
+  @override
+  onError(error) {
+    callback.onError(error);
+  }
+
+  @override
+  onSuccess(result) {
+    callback.onResponse(Activity.fromJson(result));
+  }
+
 }
 
