@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:sample/base/custom_ui/CTextTheme.dart';
-import 'package:sample/base/CNavigator.dart';
+import 'package:sample/base/ui/CNavigator.dart';
+
+import '../base/ui/CContainer.dart';
 
 class HomeWidget extends StatefulWidget {
   const HomeWidget({Key? key}) : super(key: key);

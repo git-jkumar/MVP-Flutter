@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:sample/base/ICallback.dart';
-import 'package:sample/photos/model/IPhotoResponsCallback.dart';
+import 'package:sample/base/network/IApiCallback.dart';
 import 'package:sample/photos/photo_future_builder.dart';
 import 'package:sample/photos/photo_presenter.dart';
 import 'package:sample/photos/model/photo.dart';
@@ -14,7 +13,7 @@ class PhotoWidget extends StatefulWidget {
   State<PhotoWidget> createState() => _PhotoWidget(this.title);
 }
 
-class _PhotoWidget extends State<PhotoWidget> implements ICallback{
+class _PhotoWidget extends State<PhotoWidget> implements IApiCallback{
   var presenter ;
   bool isError = false;
   List<Photo>? _list;

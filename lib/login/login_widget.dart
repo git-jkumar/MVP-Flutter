@@ -1,9 +1,10 @@
 import 'package:flutter/material.dart';
-import 'package:sample/base/custom_ui/CTextTheme.dart';
-import 'package:sample/base/custom_ui/CTextField.dart';
-import 'package:sample/base/CNavigator.dart';
+import 'package:sample/base/ui/CNavigator.dart';
 import 'package:sample/login/model/UserInfo.dart';
 import 'package:fluttertoast/fluttertoast.dart';
+
+import '../base/ui/CContainer.dart';
+import '../base/ui/CTextField.dart';
 
 class LoginWidget extends StatefulWidget {
   const LoginWidget({Key? key}) : super(key: key);

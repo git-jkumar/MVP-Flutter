@@ -1,6 +1,6 @@
-import 'package:sample/base/env_config/base_config.dart';
+import 'base_config.dart';
 
-class ProdConfig implements BaseConfig {
+class StagingConfig implements BaseConfig {
   String get apiHost => "https://jsonplaceholder.typicode.com";
 
   bool get reportErrors => true;

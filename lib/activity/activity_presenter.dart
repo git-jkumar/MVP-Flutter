@@ -1,9 +1,9 @@
 import 'package:sample/activity/model/activity.dart';
-import 'package:sample/base/ICallback.dart';
+import 'package:sample/base/network/IApiCallback.dart';
 import 'package:sample/base/base_presenter.dart';
 import 'model/activity_apis.dart';
 
-class ActivityPresenter extends BasePresenter<ICallback>{
+class ActivityPresenter extends BasePresenter{
 
   ActivityPresenter(super.callback);
 

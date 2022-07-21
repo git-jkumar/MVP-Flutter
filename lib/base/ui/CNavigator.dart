@@ -3,7 +3,7 @@ import 'package:sample/photos/photo_widget.dart';
 import 'package:sample/login/login_widget.dart';
 import 'package:sample/home/home_widget.dart';
 
-import '../activity/activity_widget.dart';
+import '../../activity/activity_widget.dart';
 
 class CNavigator {
 

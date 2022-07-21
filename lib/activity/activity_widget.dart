@@ -2,8 +2,6 @@ import 'package:flutter/material.dart';
 import 'package:sample/activity/acitivity_future_builder.dart';
 import 'package:sample/activity/activity_presenter.dart';
 import 'package:sample/base/base_widget.dart';
-import '../base/error_builder.dart';
-import '../base/loading_builder.dart';
 
 class ActivityWidget extends StatefulWidget {
   final String title;
@@ -14,7 +12,6 @@ class ActivityWidget extends StatefulWidget {
 }
 
 class _ActivityWidget extends BaseState<ActivityPresenter,ActivityWidget> {
-  FutureBuilder? builder =  LoadingBuilder().getLoadingBuilder();
   String title;
   _ActivityWidget(this.title);
 
@@ -28,21 +25,14 @@ class _ActivityWidget extends BaseState<ActivityPresenter,ActivityWidget> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(title: Text(title)),
-      body: builder,);
+      body: mBuilder,);
   }
 
   @override
   onResponse(response) {
     setState(() {
-      builder = ActivityFutureBuilder(response).getActivityBuilder();
+      mBuilder = ActivityFutureBuilder(response).getActivityBuilder();
     });
   }
 
-  @override
-  onError(error) {
-    super.onError(error);
-    setState(() {
-      builder = ErrorBuilder().getErrorBuilder();
-    });
-  }
 }

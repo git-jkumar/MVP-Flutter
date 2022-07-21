@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:sample/base/env_config/env.dart';
 import 'package:sample/splash/splash.dart';
+
+import 'environment.dart';
 
 void main(){
   const String environment = String.fromEnvironment(

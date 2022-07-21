@@ -1,7 +1,7 @@
-import 'package:sample/base/env_config/base_config.dart';
-import 'package:sample/base/env_config/env/dev_config.dart';
-import 'package:sample/base/env_config/env/staging_config.dart';
-import 'package:sample/base/env_config/env/prod_config.dart';
+import 'config/base_config.dart';
+import 'config/dev_config.dart';
+import 'config/prod_config.dart';
+import 'config/staging_config.dart';
 
 class Environment {
   factory Environment() {
